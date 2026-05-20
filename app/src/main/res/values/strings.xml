@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StopwatchApp</string><string name="default_timer_text">00:00:00.00</string>
+    <string name="logout_success">Logged out successfully</string>
+    <string name="user_not_registered">User not registered</string>
+    <string name="database_error">Database error</string>
+    <string name="lap_save_failed">Failed to save lap</string>
+    <string name="lap_load_failed">Failed to load laps</string>
+    <string name="lap_id_failed">Failed to generate lap ID</string>
+</resources>

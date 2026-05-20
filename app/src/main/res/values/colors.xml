@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="app_background">#CCAE77</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="primary_color">#6200EE</color>
+    <color name="background">#FAFAFA</color>
+    <color name="primary">#6200EE</color>
+    <color name="error">#B00020</color>
+    <color name="divider">#1F000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="red_300">#FF8A80</color>
+    <color name="gray_800">#FF424242</color>
+    <color name="gray_900">#FF212121</color>
+    <color name="primary_500">#6200EE</color>  <!-- Purple 500 -->
+    <color name="primary_700">#3700B3</color>  <!-- Darker purple -->
+    <color name="error_color">#B00020</color>
+</resources>

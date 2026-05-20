@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "39037008129",
+    "firebase_url": "https://it342-project-2a390-default-rtdb.firebaseio.com",
+    "project_id": "it342-project-2a390",
+    "storage_bucket": "it342-project-2a390.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39037008129:android:f10a65ac0432d899aec300",
+        "android_client_info": {
+          "package_name": "com.example.stopwatchapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrLjL3VQE89ASBylVjZM1AOg6CL-6OztU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal">
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="64sp"
+        android:textColor="@color/primary_dark"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Time Input Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp"
+        android:gravity="center">
+
+        <!-- Hours -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="8dp"
+            app:shapeAppearanceOverlay="@style/RoundedCorners">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hoursInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="HH"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Colon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_marginHorizontal="4dp"/>
+
+        <!-- Minutes -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="8dp"
+            app:shapeAppearanceOverlay="@style/RoundedCorners">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/minutesInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MM"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Colon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_marginHorizontal="4dp"/>
+
+        <!-- Seconds -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginStart="8dp"
+            app:shapeAppearanceOverlay="@style/RoundedCorners">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/secondsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SS"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Timer"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="8dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Timer"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:cornerRadius="8dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:enabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Stopwatch"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        android:textSize="14sp"/>
+</LinearLayout>
